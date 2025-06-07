@@ -1,0 +1,18 @@
+ JavaScript is used to add interactivity to websites, to develop mobile apps, desktop applications, games and nowadays JavaScript can be used for machine learning and AI.
+ <br>
+ Setup
+I believe you have the motivation and a strong desire to be a developer, a computer and Internet. If you have those, then you have everything to get started.
+
+Install Node.js
+You may not need Node.js right now but you may need it for later
+ Comments are very important to make code more readable and to leave remarks in our code. JavaScript does not execute the comment part of our code. In JavaScript, any text line starting with // in JavaScript is a comment, and anything enclosed like this // is also a comment.
+
+ Adding JavaScript to a Web Page
+JavaScript can be added to a web page in three different ways:
+
+1)Inline script <br>
+2)Internal script <br>
+3)External script <br>
+4)Multiple External scripts
+
+
