@@ -205,6 +205,28 @@ Output:
 ````Output:
 My name is Asabeneh Yetayeh. I live in Finland, Helsinki.I am a teacher and I love teaching. I teach HTML, CSS, JavaScript, React, Redux, Node.js, Python, Data Analysis and D3.js for anyone who is interested to learn. In the end of 2019, I was thinking to expand my teaching and to reach to global audience and I started a Python challenge from November 20 - December 19.I hope you are enjoying too.
 ````
+## Escape Sequences in Strings:
+1) \n: new line
+2) \t :tab
+3) \\ -backslash
+4) \' -single quote
+5) \" - double quote
+```javascript
+console.log('I hope everyone is enjoysing the 30 days js')
+console.log('Days\t Topics\t Exercise')
+console.log('Saying the \'saying\' hello ')
+console.log("Hello \n Bye")
+console.log("Hello \\ Bye")
+```
+Output:
+````Output:
+I hope everyone is enjoysing the 30 days js
+Days	 Topics	 Exercise
+Saying the 'saying' hello 
+Hello 
+ Bye
+Hello \ Bye
+````
 ## Template Literals (Template Strings)
 To create a template strings, we use two back-ticks. We can inject data as expressions inside a template string. To inject data, we enclose the expression with a curly bracket({}) preceded by a $ sign. See the syntax below.
 ```javascript
@@ -218,3 +240,249 @@ Output:
 The sum of 2 and 3 is 5
 The sum of 2 and 3 is 5
 ````
+# String Methods
+1) Length: size of the string
+```javascript
+let s="Varsha"
+console.log(s.length)
+```
+Output:
+```` 6 ````
+<br>
+2) Accessing the characters in the string : We can acess the string by the index .
+```javascript
+let s="Varsha"
+console.log(s[0])
+```
+Output:
+```` V ````
+<br>
+3) toUpperCase()- converts to upper case
+```javascript
+let s="Varsha"
+console.log(s.toUpperCase())
+```
+Output:
+```` VARSHA ````
+<br>
+4) toLowerCase()- converts to upper case
+```javascript
+let s="Varsha"
+console.log(s.toLowerCase())
+```
+Output:
+```` varsha ````
+<br>
+5) substr: starting position and to slice 
+```javascript
+let s="Varsha"
+console.log(s.substr(1,5))
+```
+Output:
+```` arsha ````
+<br>
+6) substring(): 2 arguments doesn't include stopping index
+```javascript
+let s="Varsha"
+console.log(s.substring(1,5))
+```
+Output:
+```` arsh ````
+<br>
+7) split(): split a string at a specified place
+```javascript
+let s="Varsha is good "
+console.log(s.split(' '))
+```
+Output:
+```` [ 'Varsha', 'is', 'good', '' ]  ````
+<br>
+8) trim(): Removes trailing space in the  begining 
+```javascript
+let s="         Varsha is good "
+console.log(s.trim(' '))
+```
+Output:
+```` Varsha is good  ````
+<br>
+9) includes(): It takes substring check if it is present or not 
+```javascript
+let s="Varsha is good "
+console.log(s.includes('Varsha '))
+```
+Output:
+```` true ````
+<br>
+10)replace(): It replaces the old substring with thte new substring
+```javascript
+let s="Varsha is good "
+console.log(s.replace ('Varsha','Hima'))
+```
+Output:
+```` Hima is good ````
+<br>
+11)  charCodeAt(): Takes the index and returns the character
+```javascript
+let s="Varsha is good "
+console.log(s.charCodeAt (5))
+```
+Output:
+````97````
+
+11)  indexOf(): Takes the substring and returns the index
+```javascript
+let s="Varsha is good "
+console.log(s.indexOf ('good'))
+console.log(s.indexOf ('g'))
+```
+Output:
+````
+10
+10 
+````
+12) lastIndexof(): takes the substring and returns the index last occurence
+
+```javascript
+let s="Varsha is good "
+console.log(s.indexOf ('a'))
+console.log(s.lastIndexOf ('a'))
+```
+Output:
+````
+1
+5 
+````
+13) concat(): concat two strings
+```javascript
+let s="Varsha",k="is good "
+console.log(s.concat(k))
+
+```
+Output:```` Varshais good ````
+<br>
+14) startsWith(): It takes a substring checks if it starts with it or not
+```javascript
+let s="Varsha is good "
+console.log(s.startsWith("Varsha"))
+console.log(s.startsWith("good"))
+
+```
+Output:
+````
+true
+false
+````
+<br>
+15) endsWith(): It takes a substring checks if it ends with it or not
+```javascript
+let s="Varsha is good"
+console.log(s.endsWith("Varsha"))
+console.log(s.endsWith("good"))
+```
+
+Output:
+````
+false
+true
+````
+16) search: Search the substring present or not
+```javascript
+let s="Varsha is good"
+console.log(s.search("Varsha"))
+console.log(s.search("goooood"))
+```
+
+Output:
+````
+0
+-1
+````
+17) match: It takes a substring return an array if it matches
+```javascript
+let s="Varsha is good"
+console.log(s.match("Varsha"))
+console.log(s.match("goooood"))
+```
+
+Output:
+````
+[ 'Varsha', index: 0, input: 'Varsha is good', groups: undefined ]
+null
+````
+18) repeat: It takes the number argument  and this return the repeated  version
+```javascript
+let s="Varsha "
+console.log(s.repeat(10))
+```
+
+Output:
+````
+Varsha Varsha Varsha Varsha Varsha Varsha Varsha Varsha Varsha Varsha 
+
+````
+# Checking  the data type and casting
+1) typeof: It is used to know what is the data type of
+```javascript
+
+console.log(typeof (10))
+console.log(typeof ('1'))
+console.log(typeof (1.0))
+console.log(typeof (true))
+console.log(typeof (NaN))
+console.log(typeof (undefined))
+```
+Output:
+````Output:
+number
+string
+number
+boolean
+number
+undefined
+````
+## Changing the data type:
+String to Integer 
+1) parseInt()
+2) Number 
+3) Plus sign
+```javascript
+let num=10
+console.log('parseInt():',parseInt(num))
+console.log('by +:',+(num))
+console.log('Number():',Number(num))
+```
+Output:
+````Output:
+parseInt(): 10
+by +: 10
+Number(): 10
+````
+b) String to Float
+1) parseFloat()
+2) Number 
+3) Plus sign
+```javascript
+let num=10.4
+console.log('parseFloat():',parseFloat(num))
+console.log('by +:',+(num))
+console.log('Number():',Number(num))
+```
+Output:
+````Output:
+parseFloat(): 10.4
+by +: 10.4
+Number(): 10.4
+````
+c) Float To int ():
+1) parseInt()
+```javascript
+let num=10.4
+console.log('parseInt():',parseInt(num))
+
+```
+Output:
+````Output:
+parseInt(): 10
+````
+**** 
+Completed my day 2
