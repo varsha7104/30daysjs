@@ -289,3 +289,23 @@ Output:
 []
 ````
 ## Exercise 2 (Medium):
+1) In the following shopping cart add, remove, edit items
+````
+const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey']
+````
+add 'Meat' in the beginning of your shopping cart if it has not been already added
+```javascript
+const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey']
+shoppingCart.push("Meat")
+console.log(shoppingCart)
+```
+Output:````[ 'Milk', 'Coffee', 'Tea', 'Honey', 'Meat' ]````
+
+2) add Sugar at the end of you shopping cart if it has not been already added
+```javascript
+const shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey']
+shoppingCart.push("Sugar")
+console.log(shoppingCart)
+```
+Output:````[ 'Milk', 'Coffee', 'Tea', 'Honey', 'Sugar' ]````
+3) remove 'Honey' if you are allergic to honey
