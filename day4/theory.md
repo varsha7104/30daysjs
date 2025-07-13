@@ -1,4 +1,4 @@
-# 📔 Day 4
+# 📔 Day 4 **
 ## Conditionals
 1) make decisions based on different conditions.
 2)  By default , statements in JS script executed sequentially from top to bottom.
