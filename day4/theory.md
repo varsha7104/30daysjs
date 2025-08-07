@@ -6,7 +6,7 @@
 
 a) Conditional execution: a block of one or more statements will be executed if a certain expression is true
 
-b) Repetitive execution: a block of one or more  statements will be repetitively executed as long as a certain expression is true. 
+b) Repetitive execution: a block of one or more  statements will be repetitively executed as long as a cert ain expression is true. 
 
 Conditions can be implementing using the following ways:
 they are
